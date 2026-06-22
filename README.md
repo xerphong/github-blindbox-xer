@@ -6,9 +6,7 @@
 
 ---
 
-## 怎么用
 
-读我的介绍 → 把 [`AI-GUIDE.md`](AI-GUIDE.md) 丢给你的 AI 编程助手 → 跟着走完 5 步。
 
 **全程浏览器操作，不需要终端。**
 
@@ -36,16 +34,3 @@ push 到 GitHub（公开的数据源）
 - 抓取是我干的，你 Fork 后只用配 DeepSeek + 邮箱
 - 全部跑在 GitHub Actions 上，零成本
 
-## 常见问题
-
-**Q：每天能收到多少项目？**
-A：从 50-80 个候选项目中筛选，最终推送 6-9 个。
-
-**Q：收不到邮件怎么办？**
-A：检查 5 个 Secret 是否正确，特别是 `QQ_SMTP_AUTH_CODE`。然后手动 Run workflow 看报错日志。
-
-**Q：可以用其他模型吗？**
-A：可以。改两个 Secret：`ANTHROPIC_BASE_URL` 和 `ANTHROPIC_MODEL`。
-
-**Q：为什么必须 07:00 之后推送？**
-A：我每天 05:00 抓取 commit，GitHub Actions 有队列延迟，07:00 之后确保数据已更新。
